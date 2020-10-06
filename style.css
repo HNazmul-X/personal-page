@@ -1,0 +1,442 @@
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;562;600;700&family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,531;0,600;0,649;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,531;1,600;1,700;1,800;1,900&family=Kufam:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,669;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;469;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,531;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,531;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,700&family=Catamaran:wght@100;200;300;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,700&family=Kurale&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat&family=Satisfy&display=swap');
+ *{box-sizing:border-box;margin:0px;padding:0px;}
+ body{
+     font-family:'fira',sans-serif; font-size:14px;            
+ } 
+h1{
+    font-size:2.5rem;
+    text-align:center;
+}
+h2{
+    font-size:1.4rem;
+    text-align:center;
+}
+.dotted_hr{
+    border:dotted 3px white;
+    border-bottom:none;
+    width:80px;
+    margin:10px auto;
+}
+hr{
+    margin:10px auto;
+}
+p{
+    font-size:16px;
+}
+a{
+    text-decoration:none;
+}
+ .navbar{
+     background:#0c6168;
+     padding:10px;
+     
+     
+ }
+ 
+.navbar_title h1{
+    text-align:center;
+    font-size:2.5rem;
+    color:white;
+}
+.navbar_menu{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    margin-top:20px;
+    text-transform:uppercase;
+
+
+}
+.navbar_menu a{
+    text-decoratioN:none;
+    color:white;
+    padding:10px;
+    margin:5px ;
+    background-color:teal;
+    border-radius:10px;
+
+}
+.navbar_menu a:hover{
+    background:grey;
+}
+[class*="col-"]{
+    float:left;
+    padding:10px;
+}
+/* for mbl */
+[class*='col-']{
+    width:100%;
+}
+.navbar::after{
+    content:'';
+    display:table;
+    clear:both;
+}
+/* ========================
+=====profile start here====
+========================== */
+
+.profile{
+    padding:130px 10px;
+    /* border:red 1px solid; */
+    position:relative;
+}
+.profile  .top_weather_icon{
+    position:absolute;
+    width:100px;
+    right:20px;
+    top:40px;
+    transition:transform 2.3s;
+}
+.profile  .top_weather_icon:hover{
+    transform:rotate(360deg)
+}
+.profile  .bottom_weather_icon{
+    position:absolute;
+    width:100px;
+    left:20px;
+    bottom:20px;
+    transition:transform 2.3s;
+}
+.profile  .bottom_weather_icon:hover{
+    transform:rotate(360deg)
+}
+.profile_desc{
+    margin:auto !important;
+}
+.profile_desc h1{
+    font-family:'satisfy',cursive;
+    font-size:3rem;
+}
+.profile_desc p{
+    color:grey;
+    line-height: initial;
+    text-align:center;
+    width:90%;
+    margin:20px auto
+}
+/* ===============
+====about me section-=====
+==================== */
+.about_me{
+    background:#39a4ac;
+    padding:1% 7%;
+    color:white;
+    text-align:center;
+    font-family:'montserrat',sans-serif;
+}
+.about_me::after{
+    display:table;
+    clear:both;
+    content:'';
+
+}
+.about_me_image{
+    height:100%;
+}
+.about_me_image img{
+    width:150px;
+    border:5px solid white;
+    border-radius:50%;
+}
+.about_me_desc {
+    padding:20px;
+}
+.about_me_desc p{
+    text-align:center;
+    font-size:14px;
+}
+.aboutme_hr{
+    margin:10px auto;
+    height:3px;
+    border:none;
+    background: #006969;
+}
+.about_me_desc a{
+    color:white;
+    font-size:1rem;
+}
+.about_me_desc button{
+    background:linear-gradient(#019996, #396969);
+    padding:10px 20px;
+    font-size:1rem;
+    color:white;
+    border:none;
+
+}
+.about_me_desc button:hover{
+    background:linear-gradient(#396969, #019996);
+    box-shadow:2px 2px 5px white;;
+}
+/* =================
+======Professional Experience======
+================================= */
+
+.professional_experience{
+    padding:1%;
+}
+.card{
+    background:grey;
+    padding:2%;
+    height:700px;
+}
+
+.card .card_desc {
+ padding:30px;
+}
+.card_icon{
+    text-align:center;
+    margin-top:10px;
+}
+.rounded_img{
+    width:80px;
+    border:5px double white;
+    border-radius:50%;
+    padding:8px;
+
+}
+.card_title{
+    color:white;
+    font-size:1.5rem;
+    text-align:center;
+    padding:10px;
+    margin:10px;
+    background:#525d68;
+}
+.professional_experience::after{
+    content:'';
+    display:table;
+    clear:both;
+}
+.card:hover{
+    box-shadow:0px 4px 6px 3px black;;
+}
+.skill_card_desc ul li{
+    list-style: none;
+    margin: 36px auto;
+}
+/* progressbar================== */
+.progressbar_back{
+    width:100%;
+    background:lightskyblue;
+    margin:6px auto 15px auto;
+    height:16px;
+    border-radius:200px;
+}
+.progressbar_up{
+    /* padding:8px; */
+    background-color: rgb(0, 162, 226);
+    width:0%;
+}
+
+.skill:hover .html{
+
+  animation-name:html;
+  animation-duration: 1s;
+  animation-fill-mode:forwards;
+  animation-timing-function:linear;
+}
+@keyframes html{
+    to{
+          height:16px;
+    /* background:red; */
+    width:90%;
+    border-radius:200px;
+    }
+}
+
+
+.skill:hover .css{
+  animation-name:css;
+  animation-duration: 1s;
+  animation-fill-mode:forwards;
+  animation-timing-function:linear;
+}
+@keyframes css{
+    to{
+          height:16px;
+    /* background:red; */
+    width:70%;
+    border-radius:200px;
+    }
+}
+
+
+
+
+
+
+.skill:hover .java_script{
+  animation-name:java_script;
+  animation-duration: 1s;
+  animation-fill-mode:forwards;
+  animation-timing-function:linear;
+}
+@keyframes java_script{
+    to{
+          height:16px;
+    /* background:red; */
+    width:25%;
+    border-radius:200px;
+    }
+}
+
+
+
+
+
+.skill:hover .jQuery{
+  animation-name:jQuery;
+  animation-duration: 1s;
+  animation-fill-mode:forwards;
+  animation-timing-function:linear;
+}
+@keyframes jQuery{
+    to{
+          height:16px;
+    /* background:red; */
+    width:5%;
+    border-radius:200px;
+    }
+}
+
+
+
+
+
+.skill:hover .bootstrap{
+  animation-name:bootstrap;
+  animation-duration: 1s;
+  animation-fill-mode:forwards;
+  animation-timing-function:linear;
+}
+@keyframes bootstrap{
+    to{
+          height:16px;
+    /* background:red; */
+    width:33%;
+    border-radius:200px;
+    }
+}
+
+/* .professional_experience end here======================
+=========================================================
+========================================================= */
+
+
+
+
+/* Achievement-contact start from here=====================
+==================================================
+============= START================================== */
+.achievement_contact{
+    padding:2% 9%;
+    background:#39a4ac;
+    color:white;
+    margin:1%;
+
+
+}
+.achievement_contact::after{
+    content:'';
+    display:table;
+    clear:both;
+}
+.achievement_contact .achievement h2{
+    padding:10px 0px;
+}
+.achievement_contact .achievement p{
+    padding:10px 0px;
+}
+.achievement{
+    margin-bottom:30px;
+}
+.contact_form{
+    padding:1% 3%;
+    text-align:center;
+}
+.contact_form input, textarea{
+   padding:10px;
+   margin:10px auto;
+   text-align:center;
+   font-size:1rem;
+    resize: none;;
+    width:100%;
+    border:none;
+    border-radius:10px;
+    font-family:'fira',sans-serif;
+}
+.contact_form button{
+    padding:15px;
+    margin:10px;
+    font-size:1rem;
+    border:none;
+    background:#052d2f;
+    color:white;
+    width:100px;border-radius:10px;
+    cursor:pointer;
+
+}
+.contact_form:hover, .achievement:hover, .contact_links:hover{
+    box-shadow:2px 2px 8px 2px black;
+    transform:scale(1.07);
+}
+.media_contact{
+    padding:2% 4%;
+}
+.media_contact h2{
+    padding:10px 0px;
+}
+.media_button{
+    text-align:center;
+}
+.media_button .btn{
+    border:none;
+    padding:10px;
+    border-radius:25%;
+    font-size:1rem;
+    width:40px;
+    margin:5px
+
+}
+.btn:hover{
+    background:#3b3b3b;
+    color:tomato;
+}
+/* footer====================
+===========================
+========================== */
+.footer{
+    background:black;
+    color:white;
+    font-size:0.8rem;
+}
+.footer::after{
+    content:'';
+    clear:both;
+    display:table;
+}
+.footer_menu a{
+    display:block;
+    color:#838383;
+    margin:10px;
+    padding:10px;
+    text-align:center;
+}
+.footer_menu a:hover{
+    background:#292929;
+
+}
+.footer_desc{
+    text-align:right;
+    padding:5px 10px;
+    color:#838383;
+}
+.footer_desc p{
+    font-size:11px;
+}
+.footer_desc span{
+    font-size:1rem;
+}

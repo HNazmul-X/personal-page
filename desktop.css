@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;562;600;700&family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,531;0,600;0,649;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,531;1,600;1,700;1,800;1,900&family=Kufam:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,669;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;469;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,531;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,531;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,700&family=Catamaran:wght@100;200;300;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,700&family=Kurale&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat&family=Satisfy&display=swap');
+ body{
+       background:#ddd;
+   }
+   .container{
+    width:1170px;
+    margin:auto;
+}
+   /*for desktop width .33% margin */
+.col-1 {width:8.16%;}
+.col-2 {width:16.32%}
+.col-3 {width:24.56%}
+.col-4 {width:32.72%}
+.col-5 {width:40.88%}
+.col-6 {width:49.04%}
+.col-7 {width:57.2%}
+.col-8 {width:65.36%}
+.col-9 {width:73.52%}
+.col-10 {width:81.68%}
+.col-11 {width:89.95%}
+.col-12 {width:98%}
+
+.navbar_title h1{
+    text-align:left;
+
+}
+.navbar{
+    position:fixed;
+     z-index:1000;
+     top:0px;
+     width:100%;
+}
+.page_wrapper{
+    margin-top:87px;
+}
+.navbar_menu{
+    flex-direction:row;
+    justify-content:flex-end;
+    padding-right:20px;
+    margin-top:0px;
+
+}
+.navbar_menu a{
+    background-color:transparent;
+}
+/* profile start from here */
+.profile .top_weather_icon{
+    right:50px;
+    transition:width 3s,transform 2s;
+}
+.profile .top_weather_icon:hover{
+    width:120px;
+    transform:rotate(360deg)
+}
+.profile .bottom_weather_icon{
+    left:50px;
+    transition:width 3s;
+}
+.profile .bottom_weather_icon:hover{
+    width:120px;
+    transition:width 3s,transform 2s;
+}
+.profile_desc P{
+    width:50%;
+}
+.profile{
+    background:white;
+}
+/* ===========================
+========About me section==========
+==========================*/
+.about_me_image {
+    height: 352px;
+}
+.about_me_image img{
+    width:220px;
+    margin-top:30px;
+}
+.about_me_desc p{
+    text-align:left;
+}
+/* 
+==================================
+professional experience=========
+=============================== */
+.professional_experience{
+    padding: 10px 0px;
+}
+.card{
+    height:600px;
+    transition:0.3s;
+}
+.card_title h2{
+    font-size:22px;
+}
+.card_desc ol li{
+    font-size:13px;
+}
+.card_desc ul li{
+    padding:20px;
+}
+.skill_card_desc ul li{
+    list-style: none;
+    margin:-30px auto;
+}
+.skill_card_desc{
+    padding-left:10px !important;
+}
+/* Achievement_contact==========
+=============================
+============================= */
+.achievement{
+    height:447px;
+
+}
+.achievement_contact{
+    margin:0px;
+}
+.contact_links{
+    position:relative;
+}
+.media_button{
+    position: absolute;
+    top: -26%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    margin-top: 200px;
+    width: 200px;
+}
+.btn{
+    margin:10px !important;
+   width:70px!important;
+}
+/* footer start from here */
+.footer_menu a{
+    display:inline;
+}
+.footer_menu{
+    padding:20px;
+}
+.footer_desc{
+    padding-top:30px;
+}
